@@ -33,7 +33,11 @@
       <ul class="tasks-list">
         <li class="tasks-list__items  task-item">
           <div class="task-item__view">
-            <input type="checkbox" class="task-item__status" aria-label="Completed task: HTML" />
+            <input
+                    type="checkbox"
+                    class="task-item__status"
+                    aria-label="Completed task: HTML"
+            />
             <span class="task-item"> HTML </span>
             <button class="task-item__delete">Delete task</button>
           </div>
@@ -61,19 +65,33 @@
           </div>
 
           <div class="task-item__edit" hidden="hidden">
-            <input type="text" class="task-item__input" value="CSS" aria-label="Edit task: CSS" />
+            <input
+                    type="text"
+                    class="task-item__input"
+                    value="CSS"
+                    aria-label="Edit task: CSS"
+            />
           </div>
         </li>
 
         <li class="tasks-list__items  task-item">
           <div class="task-item__view">
-            <input type="checkbox" class="task-item__status" aria-label="Completed task: JS" />
+            <input
+                    type="checkbox"
+                    class="task-item__status"
+                    aria-label="Completed task: JS"
+            />
             <span class="task-item"> JS </span>
             <button class="task-item__delete">Delete task</button>
           </div>
 
           <div class="task-item__edit" hidden="hidden">
-            <input type="text" class="task-item__input" value="JS" aria-label="Edit task: JS" />
+            <input
+                    type="text"
+                    class="task-item__input"
+                    value="JS"
+                    aria-label="Edit task: JS"
+            />
           </div>
         </li>
 
@@ -105,7 +123,7 @@
     <div class="footer__items-left">3 items left</div>
 
     <div class="footer__selected-list">
-      <div class="selected-item__view">
+      <label class="selected-item__view">
         <input
                 type="radio"
                 class="task-item__status"
@@ -115,9 +133,9 @@
                 value="All"
         />
         <span class="task-item"> All </span>
-      </div>
+      </label>
 
-      <div class="selected-item__view">
+      <label class="selected-item__view">
         <input
                 type="radio"
                 class="task-item__status"
@@ -126,9 +144,9 @@
                 value = "Active"
         />
         <span class="task-item"> Active </span>
-      </div>
+      </label>
 
-      <div class="selected-item__view">
+      <label class="selected-item__view">
         <input
                 type="radio"
                 class="task-item__status"
@@ -137,7 +155,7 @@
                 value = "Completed"
         />
         <span class="task-item"> Completed </span>
-      </div>
+      </label>
     </div>
 
     <button class="footer__clear-all">Clear completed</button>
