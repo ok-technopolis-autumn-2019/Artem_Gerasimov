@@ -1,0 +1,9 @@
+.todos-header{
+    display: flex;
+}
+
+h1{
+    font-size: 80px;
+    font-family: "Giger", serif;
+    margin-bottom: 30px;
+}

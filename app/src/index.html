@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Todos</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
 </head>
 
 <body>
@@ -13,9 +14,7 @@
   <div class="todos-actions-bar actions-bar">
     <section class="actions-bar__main-controls main-controls">
       <div class="main-controls__select-all">
-        <button class="main-controls__select-all__button">
-          Select all task
-        </button>
+        <button class="main-controls__select-all__button"> Select all task  </button>
       </div>
 
       <div class="main-controls__create-new create-new">
@@ -120,7 +119,7 @@
   </div>
 
   <footer class="todos-footer footer">
-    <div class="footer__items-left">3 items left</div>
+    <div class="footer__items-left"> 3 items left</div>
 
     <div class="footer__selected-list">
       <label class="selected-item__view">
@@ -132,7 +131,7 @@
                 aria-label="Shows all"
                 value="All"
         />
-        <span class="task-item"> All </span>
+        <span class="selected-item__task"> All </span>
       </label>
 
       <label class="selected-item__view">
@@ -143,7 +142,7 @@
                 aria-label="Shows active"
                 value = "Active"
         />
-        <span class="task-item"> Active </span>
+        <span class="selected-item__task"> Active </span>
       </label>
 
       <label class="selected-item__view">
@@ -154,7 +153,7 @@
                 aria-label="Shows completed"
                 value = "Completed"
         />
-        <span class="task-item"> Completed </span>
+        <span class="selected-item__task"> Completed </span>
       </label>
     </div>
 

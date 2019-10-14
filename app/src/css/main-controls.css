@@ -1,0 +1,53 @@
+.main-controls{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+
+    height: 50px;
+
+    outline: 1px solid #bfbfbf;
+}
+/* Button */
+.main-controls__select-all__button{
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    background-color: white;
+
+
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 20px 12px;
+    background-position: center;
+
+    height: 50px;
+    width: 45px;
+
+    text-indent: 160%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.create-new{
+    width: 590px;
+    margin-top: 5px;
+}
+
+.create-new__input{
+    border: 0;
+    padding: 0;
+
+    font-size: 20px;
+    font-style: italic;
+    color: #f0f0f0;
+}
+
+.create-new__input:focus
+{
+    outline: none;
+}
+
