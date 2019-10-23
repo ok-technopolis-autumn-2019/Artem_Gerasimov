@@ -1,68 +1,75 @@
-
 .tasks{
-    outline: 1px solid #bfbfbf;
-}
+    min-height: 296px;
+    }
+    .tasks:empty{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .tasks:empty::before{
+            content: " ";
+            font-size: 100px;
+        }
+
 /* List */
-.task-item {
-    list-style-type: none;
-    cursor: pointer;
-}
-
-.task-item__view{
-    outline: 1px solid #bfbfbf;
-    padding: 10px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-}
-
-.task-item{
-    flex-grow: 1;
-    width: auto;
-}
-
 .tasks-list{
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    padding-left: 0;
 
 }
+    .task-item {
+        box-sizing: border-box;
+        border-bottom: 1px #E6E6E6 solid;
+        }
 
-.task-item__status{
-    cursor: pointer;
-    margin-right: 10px;
-}
+        .task-item__view{
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            min-height: 59px;
+            overflow: hidden;
+            }
+
+            .task-item__view:hover{
+                background-color: #FAFAFA;
+            }
+
+        .task-item__delete{
+            flex-shrink: 0;
+
+            width: 36px;
+            height: 36px;
+
+            margin: -9999px 4px 0 12px;
+            text-indent: -9999px;
+
+            background-image: url("../img/delete.svg");
+            background-repeat: no-repeat;
+            background-position: 50%;
+
+            cursor: pointer;
+            }
+            .task-item__delete:focus,
+            .task-item__view:hover .task-item__delete{
+                margin-top: 0;
+            }
+     .task-item__edit{
+         padding-left: 56px;
+        }
+        .task-item__input{
+            height: 59px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
 
 
-.task-item__delete{
-    border: none;
-    outline: none;
-    background-color: white;
+.task-item__text{
+    display: flex;
+    flex-grow: 1;
+    min-width: 0;
+    padding: 12px 0;
+    word-break: break-word;
+    font-size: 24px;
+    }
 
-    background-image: url("../img/delete.png");
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: center;
 
-    width: 21px;
-    height: 21px;
 
-    text-indent: 160%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.task-item__delete:hover{
-    cursor: pointer;
-
-    background-image: url("../img/delete2.png");
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: center;
-}
