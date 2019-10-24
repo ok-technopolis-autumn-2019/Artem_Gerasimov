@@ -1,0 +1,17 @@
+.actions-bar{
+    /*font-size: 30px;*/
+
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px #E6E6E6 solid;
+
+    height: 40px;
+
+    padding: 3px 12px;
+    /*box-sizing: border-box;*/
+
+    font-size: 14px;
+
+    color: #888;
+}

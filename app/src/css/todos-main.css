@@ -1,0 +1,13 @@
+.todos-main{
+    position: relative;
+    width: 80%;
+    max-width: 560px;
+    min-width: 460px;
+    margin: 0 auto 20px;
+    }
+    .todos-main::before{
+        content: ' ';
+        position: absolute;
+        top: 100%;
+        left: 2px;
+    }
