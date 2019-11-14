@@ -1,3 +1,11 @@
+/**
+    author: Gerasimov Artem|| ok.ru/artem241111
+
+    @project class: .body
+ */
+
+/* Tasks list
+------------------------------------------------------------------------------------------------- */
 body{
     display: flex;
     flex-direction: column;
@@ -13,21 +21,21 @@ body{
     margin: 0 auto 20px;
     }
 
-    body:before {
+    @nest &:before {
         left: 2px;
         right: 2px;
         height: 5px;
         z-index: -1;
         }
 
-    body:after {
+    @nest &:after {
         left: 4px;
         right: 4px;
         height: 10px;
         z-index: -2;
         }
 
-    body:after, body:before {
+    @nest &:after,  @nest &:before {
         background-color: #fff;
         box-shadow: 0 2px 4px rgba(0,0,0,.2);
         content: "";
@@ -48,3 +56,6 @@ body{
             position: relative;
             z-index: 1;
         }
+
+/* /Tasks list
+------------------------------------------------------------------------------------------------- */

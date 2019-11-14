@@ -1,0 +1,16 @@
+html{
+    --color_gray_1: #fff;
+    --color_gray_2: #ccc;
+    --color_gray_3: #e6e6e6;
+    --color_gray_4: #888;
+    --color_gray_5: #666;
+
+    --color_bd:var(--color_gray_1);
+    --color_delimiter:var(--color_gray_3);
+    --color_primary_text:var(--color_gray_5);
+    --color_secondary_text:var(--color_gray_4);
+
+    --font_size_small: 15px;
+    --font_size_normal: 100px;
+    --font_size_large: 50px;
+}

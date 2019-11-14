@@ -1,3 +1,12 @@
+/**
+    author: Gerasimov Artem|| ok.ru/artem241111
+
+    @project class: .checkbox
+    @comments: прорисовка чекбоксов
+ */
+
+/* Tasks list
+------------------------------------------------------------------------------------------------- */
 .task-item__status-icon {
     flex-shrink: 0;
 
@@ -31,7 +40,7 @@
     position: absolute;
     left: -9999px;
     }
-    .task-item__status:checked +.task-item__status-icon{
+    @nest &:checked +.task-item__status-icon{
         background-image: url('../img/completed.svg');
         background-position: 6px 8px;
         background-repeat: no-repeat;
@@ -41,11 +50,14 @@
 
     }
 
-    .task-item__status:focus +.task-item__status-icon{
+    @nest &:focus +.task-item__status-icon{
         border-color: #2316cc;
     }
 
-    .task-item__status:hover .checkbox:not(:checked) +.task-item__status-icon{
+    @nest &:hover .checkbox:not(:checked) +.task-item__status-icon{
         border-color: #CCCCCC;
     }
+
+/* /Tasks list
+------------------------------------------------------------------------------------------------- */
 

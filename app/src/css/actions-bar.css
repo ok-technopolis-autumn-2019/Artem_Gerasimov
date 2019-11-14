@@ -1,6 +1,13 @@
-.actions-bar{
-    /*font-size: 30px;*/
+/**
+    author: Gerasimov Artem|| ok.ru/artem241111
 
+    @project class: .actions-bar
+    @comments: Вывод блока с задачами
+ */
+
+/* Tasks list
+------------------------------------------------------------------------------------------------- */
+.actions-bar{
     align-items: center;
     justify-content: space-between;
 
@@ -9,9 +16,8 @@
     height: 40px;
 
     padding: 3px 12px;
-    /*box-sizing: border-box;*/
-
-    font-size: 14px;
 
     color: #888;
 }
+/* /Tasks list
+------------------------------------------------------------------------------------------------- */
