@@ -11,6 +11,6 @@ html{
     --color_secondary_text:var(--color_gray_4);
 
     --font_size_small: 15px;
-    --font_size_normal: 100px;
+    --font_size_normal: 24px;
     --font_size_large: 50px;
 }
