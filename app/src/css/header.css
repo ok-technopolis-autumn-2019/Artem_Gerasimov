@@ -1,8 +1,19 @@
+/**
+    author: Gerasimov Artem|| ok.ru/artem241111
+
+    @project class: .header
+    @comments: Прорисовка и размещение header
+ */
+
+/* Tasks list
+------------------------------------------------------------------------------------------------- */
 .todos-header{
     display: flex;
 
     margin-bottom: 30px;
     margin-top: 50px;
 
-    font-size: 50px;
+    font-size: var(--font_size_large);
 }
+/* /Tasks list
+------------------------------------------------------------------------------------------------- */

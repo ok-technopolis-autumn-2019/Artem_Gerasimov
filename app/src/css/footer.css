@@ -1,3 +1,12 @@
+/**
+    author: Gerasimov Artem|| ok.ru/artem241111
+
+    @project class: .footer
+    @comments: Прорисовка и размещение футера
+ */
+
+/* Tasks list
+------------------------------------------------------------------------------------------------- */
 .footer{
     display: flex;
     flex-direction: row;
@@ -43,7 +52,7 @@
                 border-radius: 5px;
             }
 
-            .task-item__status:checked + .selected-item__task{
+            @nest &:checked + .selected-item__task{
                 border-color: #EBDFDF;
             }
 
@@ -57,5 +66,7 @@
         }
 
         .footer__button__clear-all{
-            font-size: 15px;
+            font-size: var(--font_size_small);
         }
+/* /Tasks list
+------------------------------------------------------------------------------------------------- */
